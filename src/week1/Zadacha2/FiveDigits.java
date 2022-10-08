@@ -17,6 +17,7 @@ public class FiveDigits {
         int inputNumber = scanner.nextInt();
         if(!isFiveDigits(inputNumber)){
             System.err.println("Number is not five digits!");
+            System.exit(1);
         }
         int originalValueNumber = inputNumber;
         int [] separatedNumbers = new int[5];
@@ -32,10 +33,12 @@ public class FiveDigits {
                 break;
             }
         }
+        String resultString;
         if(isPalindrome){
-            System.out.printf("%d is a palindrome", originalValueNumber);
+            resultString = originalValueNumber + " is a palindrome";
         }else{
-            System.out.printf("%d is not a palindrome", originalValueNumber);
+            resultString = originalValueNumber + " is not a palindrome";
         }
+        System.out.println(resultString);
     }
 }
