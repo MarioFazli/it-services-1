@@ -1,4 +1,4 @@
-package Zadacha1;
+package week1.Zadacha1;
 
 import javax.swing.*;
 
