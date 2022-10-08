@@ -1,4 +1,4 @@
-package week1.Zadacha1;
+package Zadacha1;
 
 public class Temperature {
     public double convertToCelsius(double fahrenheit){
